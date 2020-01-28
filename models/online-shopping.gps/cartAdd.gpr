@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="cartAdd">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>131 222 280 54</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>31 29 114 18</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>321 129 106 18</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>299 8 211 54</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>515 215 111 36</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>273 458 59 36</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>291 373 27 36</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>402 371 17 36</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>223 86 20 36</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>515 157 20 36</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>522 423 117 18</string>
+            </attr>
+        </node>
+        <node id="n13">
+            <attr name="layout">
+                <string>680 321 20 36</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>id:c</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Cart</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>let:cartItem_cntr = int:add(cartItem_cntr,1)</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>let:totalPrice = int:add(int:totalPrice,int:mul(int:param.quantity,int:pr.price))</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>test:status==string:"open"</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n7">
+            <attr name="label">
+                <string>contains</string>
+            </attr>
+            <attr name="layout">
+                <string>574 23 263 256 258 329 570 233 14</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>contains</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 263 256 84 246 88 38 14</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n11">
+            <attr name="label">
+                <string>cartItem_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>id:citemnac</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:CartItem</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n5">
+            <attr name="label">
+                <string>relates</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>id:own</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:OnlineShop</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n5">
+            <attr name="label">
+                <string>controls</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n0">
+            <attr name="label">
+                <string>controls</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>id:pr</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>type:Product</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>let:quantity = int:sub(int:quantity,param.quantity)</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>test:quantity&gt;0</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n10">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>id:citem</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:CartItem</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>let:id = int:c.cartItem_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n13">
+            <attr name="label">
+                <string>quantity</string>
+            </attr>
+            <attr name="layout">
+                <string>517 4 596 256 655 303 11</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n5">
+            <attr name="label">
+                <string>relates</string>
+            </attr>
+            <attr name="layout">
+                <string>328 -2 570 233 566 30 442 30 14</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Customer</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n8">
+            <attr name="label">
+                <string>userInfo</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:User</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n6">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n0">
+            <attr name="label">
+                <string>selects</string>
+            </attr>
+            <attr name="layout">
+                <string>516 -30 304 391 210 322 263 256 14</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>par:0</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>par:1</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>par:3</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>id:param</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n13">
+            <attr name="label">
+                <string>quantity</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>par:2</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

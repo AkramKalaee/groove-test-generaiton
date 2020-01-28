@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="creditCardAdd">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>238 127 59 36</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>407 50 65 36</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>126 209 27 36</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>257 292 72 36</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>126 406 25 36</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>426 283 44 36</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>433 408 35 36</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>411 179 65 36</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>133 281 17 36</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>596 22 17 36</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>589 107 36 36</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>735 52 69 36</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Customer</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n7">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>userInfo</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:CreditCard</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n10">
+            <attr name="label">
+                <string>institute</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n9">
+            <attr name="label">
+                <string>no</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:User</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n8">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n5">
+            <attr name="label">
+                <string>requests</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 139 227 333 240 450 426 13</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:OnlineShop</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>controls</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n2">
+            <attr name="label">
+                <string>manages</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n5">
+            <attr name="label">
+                <string>controls</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:Cart</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:Invoice</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>type:Order</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>test:status=="new"</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n6">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n4">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:CreditCard</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>par:0</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>par:1</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>par:2</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n9">
+            <attr name="label">
+                <string>no</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n10">
+            <attr name="label">
+                <string>institute</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

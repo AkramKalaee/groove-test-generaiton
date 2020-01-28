@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="cartClear">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>105 47 72 36</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>85 156 100 54</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>327 160 53 36</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>276 45 27 36</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>367 45 17 36</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>342 231 17 36</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>478 239 36 36</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>468 159 48 36</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:OnlineShop</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>controls</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>manages</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n8">
+            <attr name="label">
+                <string>controls</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Cart</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>test:status==string:"open"</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n2">
+            <attr name="label">
+                <string>contains</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>del:</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:CartItem</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n6">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n8">
+            <attr name="label">
+                <string>relates</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:User</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n1">
+            <attr name="label">
+                <string>selects</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n5">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>par:0</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>par:1</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>par:2</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:Product</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n7">
+            <attr name="label">
+                <string>title</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>
