@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="AddAgent">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n11">
+            <attr name="layout">
+                <string>298 374 139 54</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>119 288 100 18</string>
+            </attr>
+        </node>
+        <node id="n14">
+            <attr name="layout">
+                <string>84 356 98 18</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>254 479 74 18</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>408 476 86 18</string>
+            </attr>
+        </node>
+        <node id="n16">
+            <attr name="layout">
+                <string>592 357 78 18</string>
+            </attr>
+        </node>
+        <node id="n15">
+            <attr name="layout">
+                <string>301 198 131 54</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>518 297 105 18</string>
+            </attr>
+        </node>
+        <node id="n17">
+            <attr name="layout">
+                <string>272 102 180 54</string>
+            </attr>
+        </node>
+        <node id="n19">
+            <attr name="layout">
+                <string>619 203 48 18</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>111 118 17 36</string>
+            </attr>
+        </node>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>type:Person</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>let:ID = int:agency.person_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n14">
+            <attr name="label">
+                <string>lastName</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n0">
+            <attr name="label">
+                <string>socialCode</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n16">
+            <attr name="label">
+                <string>phone</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n2">
+            <attr name="label">
+                <string>address</string>
+            </attr>
+            <attr name="layout">
+                <string>459 -12 367 401 431 489 11</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n9">
+            <attr name="label">
+                <string>firstName</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n10">
+            <attr name="label">
+                <string>email</string>
+            </attr>
+            <attr name="layout">
+                <string>408 -4 367 401 291 488 11</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>string:"first name"</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>par:0</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>string:"last name"</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>par:1</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>string:"email"</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>par:2</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>string:"address"</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>par:3</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>string:"phone"</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>par:4</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>type:Agent</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>let:ID = int:agency.agent_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n19">
+            <attr name="label">
+                <string>commisionPercentUSD</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n11">
+            <attr name="label">
+                <string>personInfo</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:"social code"</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>par:5</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>id:agency</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>type:TravelAgency</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>let:agent_cntr = int:add(int:agent_cntr,1)</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>let:person_cntr = int:add(int:person_cntr,1)</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n15">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n1">
+            <attr name="label">
+                <string>agent_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n19" to="n19">
+            <attr name="label">
+                <string>real:0.25</string>
+            </attr>
+        </edge>
+        <edge from="n19" to="n19">
+            <attr name="label">
+                <string>par:6</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>par:7</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

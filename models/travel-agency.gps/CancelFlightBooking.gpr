@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="CancelFlightBooking">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>205 157 92 36</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>17 158 59 36</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>180 256 142 54</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>430 257 811 54</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>457 466 111 18</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>229 360 45 36</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>379 341 258 54</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>43 365 37 36</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>13 268 90 36</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>201 62 17 36</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>del:</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Flight_Booking</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>flightInfo</string>
+            </attr>
+            <attr name="layout">
+                <string>613 0 251 175 251 283 11</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n8">
+            <attr name="label">
+                <string>Flight_Request_Info</string>
+            </attr>
+            <attr name="layout">
+                <string>448 18 251 175 58 286 11</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n9">
+            <attr name="label">
+                <string>ID</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Customer</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n8">
+            <attr name="label">
+                <string>sends</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:Flight</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>let:seat_cntr = sub(int:seat_cntr,1)</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n3">
+            <attr name="label">
+                <string>depart</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:DateTime</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>test:bool:or(bool:or(int:gt(int:year, int:current.year), bool:and(int:eq(int:year, int:current.year),int:gt(int:month, int:current.month))),(bool:and(int:eq(int:year, int:current.year), bool:and(int:eq(int:month, int:current.month),int:gt(int:day, int:current.day)))))</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>id:current</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>type:DateTime</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:Agency</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n2">
+            <attr name="label">
+                <string>plans</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:TravelAgency</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>let:flight_booking_cntr = sub(int:flight_booking_cntr,1)</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n4">
+            <attr name="label">
+                <string>maintains</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n7">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 508 368 286 421 61 383 13</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n5">
+            <attr name="label">
+                <string>currentDateTime</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n0">
+            <attr name="label">
+                <string>manages</string>
+            </attr>
+            <attr name="layout">
+                <string>816 26 508 368 587 126 251 175 14</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:Agent</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n8">
+            <attr name="label">
+                <string>receives</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n0">
+            <attr name="label">
+                <string>books</string>
+            </attr>
+            <attr name="layout">
+                <string>455 -12 61 383 251 175 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>del:</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:Flight_Request</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>par:0</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

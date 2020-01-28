@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="EditAgent">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n8">
+            <attr name="layout">
+                <string>421 278 42 36</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>348 114 175 54</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>101 124 83 36</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>621 112 17 36</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>84 254 112 18</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>95 318 100 18</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>89 414 123 18</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>142 473 125 18</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>279 508 129 18</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>700 236 48 18</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>506 13 23 36</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>659 284 36 36</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>653 340 36 36</string>
+            </attr>
+        </node>
+        <node id="n13">
+            <attr name="layout">
+                <string>635 396 36 36</string>
+            </attr>
+        </node>
+        <node id="n14">
+            <attr name="layout">
+                <string>604 438 36 36</string>
+            </attr>
+        </node>
+        <node id="n15">
+            <attr name="layout">
+                <string>543 482 36 36</string>
+            </attr>
+        </node>
+        <node id="n16">
+            <attr name="layout">
+                <string>393 562 104 18</string>
+            </attr>
+        </node>
+        <node id="n17">
+            <attr name="layout">
+                <string>469 499 36 36</string>
+            </attr>
+        </node>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:Person</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n2">
+            <attr name="label">
+                <string>new:address</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n4">
+            <attr name="label">
+                <string>new:email</string>
+            </attr>
+            <attr name="layout">
+                <string>561 -1 345 327 172 327 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n5">
+            <attr name="label">
+                <string>new:lastName</string>
+            </attr>
+            <attr name="layout">
+                <string>596 5 345 338 175 413 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n6">
+            <attr name="label">
+                <string>new:firstName</string>
+            </attr>
+            <attr name="layout">
+                <string>557 9 358 362 226 466 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n7">
+            <attr name="label">
+                <string>new:socialCode</string>
+            </attr>
+            <attr name="layout">
+                <string>524 -2 400 362 333 468 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n11">
+            <attr name="label">
+                <string>del:address</string>
+            </attr>
+            <attr name="layout">
+                <string>463 -1 540 302 650 302 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n12">
+            <attr name="label">
+                <string>del:email</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n13">
+            <attr name="label">
+                <string>del:firstName</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n14">
+            <attr name="label">
+                <string>del:lastName</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n15">
+            <attr name="label">
+                <string>del:socialCode</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n16">
+            <attr name="label">
+                <string>new:phone</string>
+            </attr>
+            <attr name="layout">
+                <string>525 15 445 317 445 557 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n17">
+            <attr name="label">
+                <string>del:phone</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Agent</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n8">
+            <attr name="label">
+                <string>personInfo</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n1">
+            <attr name="label">
+                <string>ID</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n9">
+            <attr name="label">
+                <string>new:commisionPercentUSD</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n10">
+            <attr name="label">
+                <string>del:commisionPercentUSD</string>
+            </attr>
+            <attr name="layout">
+                <string>284 -19 458 111 506 51 11</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:TravelAgency</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>par:0</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>string:"new address"</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>par:1</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>string:"new email"</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>par:2</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>string:"new lastName"</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>par:3</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>string:"new firstName"</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>par:4</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>string:"new socialCode"</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>par:5</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>real:0.50</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>par:6</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>real:</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>string:"new phone"</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>par:7</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>string:</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

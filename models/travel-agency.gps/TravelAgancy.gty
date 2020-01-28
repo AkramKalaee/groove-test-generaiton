@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="type" edgeids="false" edgemode="directed" id="TravelAgancy">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>93 94 107 144</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>83 359 161 54</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>523 366 59 36</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>316 111 103 72</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>74 731 89 90</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>268 670 75 144</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>240 512 92 54</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>497 652 116 162</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>511 519 90 54</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>667 158 133 180</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>73 574 66 126</string>
+            </attr>
+        </node>
+        <node id="n14">
+            <attr name="layout">
+                <string>701 458 66 126</string>
+            </attr>
+        </node>
+        <node id="n13">
+            <attr name="layout">
+                <string>318 199 90 72</string>
+            </attr>
+        </node>
+        <node id="n15">
+            <attr name="layout">
+                <string>317 290 89 72</string>
+            </attr>
+        </node>
+        <node id="n16">
+            <attr name="layout">
+                <string>328 415 61 72</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>684 625 73 54</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>686 697 57 36</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Person</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:address</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:email</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:firstName</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:lastName</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:phone</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:socialCode</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:Agent</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>real:commisionPercentUSD</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n4">
+            <attr name="label">
+                <string>userInfo</string>
+            </attr>
+            <attr name="layout">
+                <string>248 2 163 386 283 176 317 176 11</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>personInfo</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n13">
+            <attr name="label">
+                <string>receives</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n8">
+            <attr name="label">
+                <string>books</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n15">
+            <attr name="label">
+                <string>receives</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n11">
+            <attr name="label">
+                <string>books</string>
+            </attr>
+            <attr name="layout">
+                <string>240 4 163 386 358 513 556 546 13</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Customer</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n15">
+            <attr name="label">
+                <string>sends</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n13">
+            <attr name="label">
+                <string>sends</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n0">
+            <attr name="label">
+                <string>personInfo</string>
+            </attr>
+            <attr name="layout">
+                <string>198 0 552 384 452 100 222 102 146 177 11</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:User</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>string:password</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>string:userName</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n14">
+            <attr name="label">
+                <string>registerDate</string>
+            </attr>
+            <attr name="layout">
+                <string>566 0 367 147 499 173 734 521 11</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>type:Agency</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>string:location</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>string:phone</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>string:title</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n6">
+            <attr name="label">
+                <string>plans</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:Flight</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:capacity</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:flightNo</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:price</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>int:seat_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>string:from</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>string:to</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n1">
+            <attr name="label">
+                <string>arrive</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 291 718 215 661 106 637 12</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n1">
+            <attr name="label">
+                <string>depart</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 291 718 215 661 106 637 12</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:Flight_Booking</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>int:seatNo</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n6">
+            <attr name="label">
+                <string>flightInfo</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n13">
+            <attr name="label">
+                <string>Flight_Request_Info</string>
+            </attr>
+            <attr name="layout">
+                <string>76 -57 286 539 39 261 363 235 14</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>type:Hotel</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>int:availableRooms</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>int:price</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>int:room_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>string:description</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>string:location</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>string:phone</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>string:title</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>type:Hotel_Booking</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>int:roomNo</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n9">
+            <attr name="label">
+                <string>hotelInfo</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n15">
+            <attr name="label">
+                <string>Hotel_Request_Info</string>
+            </attr>
+            <attr name="layout">
+                <string>477 6 556 546 361 326 11</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>type:TravelAgency</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:agency_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:agent_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:customer_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:flight_booking_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:flight_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:hotel_booking_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:hotel_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:person_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>int:user_cntr</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n9">
+            <attr name="label">
+                <string>maintains</string>
+            </attr>
+            <attr name="layout">
+                <string>24 2 733 248 783 845 543 847 555 733 14</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n2">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+            <attr name="layout">
+                <string>25 -6 733 248 758 59 54 60 54 383 163 386 14</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n11">
+            <attr name="label">
+                <string>manages</string>
+            </attr>
+            <attr name="layout">
+                <string>717 5 733 248 556 546 11</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n14">
+            <attr name="label">
+                <string>currentDateTime</string>
+            </attr>
+            <attr name="layout">
+                <string>649 3 733 248 734 521 11</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n8">
+            <attr name="label">
+                <string>manages</string>
+            </attr>
+            <attr name="layout">
+                <string>335 4 733 248 815 82 71 82 72 545 286 539 14</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n5">
+            <attr name="label">
+                <string>maintains</string>
+            </attr>
+            <attr name="layout">
+                <string>95 -11 733 248 818 875 111 872 118 776 14</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:DateTime</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:day</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:hour</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:minute</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:month</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:second</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:year</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>type:DateTime</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>int:day</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>int:hour</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>int:minute</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>int:month</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>int:second</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>int:year</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>type:Flight_Request</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>int:budget</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>string:from</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>string:to</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>type:Hotel_Request</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>int:budget</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>int:nights</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>string:location</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n16">
+            <attr name="label">
+                <string>bookingDate</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>type:DateTime</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>int:day</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>int:month</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>int:year</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:DataList</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>int:ID</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>string:value</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>type:DataItem</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>
